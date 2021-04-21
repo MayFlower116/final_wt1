@@ -22,10 +22,8 @@ header, footer {
 }
 
 
-nav > ul > li {
-    display: inline;
-    padding: 10%;
-    text-align: center;
+li {
+    list-style-type: none;
 }
 h1 {
     font-family: 'Indie Flower', cursive;
@@ -48,20 +46,19 @@ a:visited {
 
 
 /* Storefront */
-.album_store {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    justify-content: space-between;
-    padding: 5%;
-}
 
 .album_store_item {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
+    padding: 5%;
 }
-
+.album_store {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
 
 
 
@@ -78,4 +75,21 @@ a:visited {
 }
 
 
+
+@media screen and (min-width: 640px) {
+    nav > ul > li {
+        display: inline;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .album_store {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+}
 
