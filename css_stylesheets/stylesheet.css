@@ -5,6 +5,12 @@
 #6C4B61 - cart/secondary alt background - dull, greyish purple
 */
 
+/* REMINDERS
+---Add responsive meta tag to HTML head 
+---Add alt colors for hyperlink text
+---Remove dots from nav bar
+*/
+
 body {
     background-color: #8f0641;
 }
@@ -16,10 +22,26 @@ h1 {
 * {
     font-family: 'RocknRoll One', sans-serif;
     color: #fff7fb;
+    text-align: center;
 }
 
 header, footer {
     background-color: #590555;
+}
+
+.album_store {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.album_store_item {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    
 }
 
 .cart {
