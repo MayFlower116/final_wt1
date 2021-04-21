@@ -1,17 +1,13 @@
 /* Palette
-        DARK
-#26233A - light grey - aside bg, textbox bg
-#191724 - black - primary bg
-#F09EB5 - soft pink - text, buttons, textbox border
-#f6c177 - soft gold - alternate text, alternate buttons
-#9ccfd8 - pale tuqoise - contrasting button
-#26233a - softer black - button text
-^^^OLD^^^
-
-Desires:
--Dark pink/magenta, IE pink crimson
--Angelic/creamy white
+#8f0641 - background - pink crimson
+#fff7fb - text - creamy, slightly pink white
+#590555 - alt background - dark purple
+#6C4B61 - cart/secondary alt background - dull, greyish purple
 */
+
+body {
+    background-color: #8f0641;
+}
 
 h1 {
     font-family: 'Indie Flower', cursive;
@@ -19,4 +15,13 @@ h1 {
 
 * {
     font-family: 'RocknRoll One', sans-serif;
+    color: #fff7fb;
+}
+
+header, footer {
+    background-color: #590555;
+}
+
+.cart {
+    background-color: #6C4B61;
 }
