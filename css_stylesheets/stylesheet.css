@@ -3,6 +3,8 @@
 #fff7fb - text - creamy, slightly pink white
 #590555 - alt background - dark purple
 #6C4B61 - cart/secondary alt background - dull, greyish purple
+#dfffcf - hyperlink (unvisited) - very light green
+#ffe7cf - Hyperlink (visted) - very light orange
 */
 
 /* REMINDERS
@@ -11,24 +13,41 @@
 ---Remove dots from nav bar
 */
 
+/* General */
 body {
     background-color: #8f0641;
 }
-
-h1 {
-    font-family: 'Indie Flower', cursive;
+header, footer {
+    background-color: #590555;
 }
 
+
+nav > ul > li {
+    display: inline;
+    padding: 10%;
+    text-align: center;
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
 * {
     font-family: 'RocknRoll One', sans-serif;
     color: #fff7fb;
     text-align: center;
 }
-
-header, footer {
-    background-color: #590555;
+a:link {
+    color: #dfffcf;
+}
+a:visited {
+    color: #ffe7cf;
 }
 
+
+
+
+
+/* Storefront */
 .album_store {
     display: grid;
     grid-template-columns: auto auto;
@@ -41,9 +60,22 @@ header, footer {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
-    
 }
 
+
+
+
+/* Cart */
 .cart {
     background-color: #6C4B61;
 }
+
+.album_cart {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 3%px;
+}
+
+
+
